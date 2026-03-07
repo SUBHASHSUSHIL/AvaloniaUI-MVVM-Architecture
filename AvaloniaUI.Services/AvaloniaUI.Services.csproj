@@ -10,4 +10,9 @@
     <ProjectReference Include="..\AvaloniaUI.Core\AvaloniaUI.Core.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Navigation\" />
+    <Folder Include="Notification\" />
+  </ItemGroup>
+
 </Project>
