@@ -2,4 +2,5 @@
   <Project Path="AvaloniaUI.App/AvaloniaUI.App.csproj" />
   <Project Path="AvaloniaUI.Core/AvaloniaUI.Core.csproj" />
   <Project Path="AvaloniaUI.Services/AvaloniaUI.Services.csproj" />
+  <Project Path="AvaloniaUI.Test/AvaloniaUI.Test.csproj" />
 </Solution>
