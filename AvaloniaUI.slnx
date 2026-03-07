@@ -1,1 +1,3 @@
-<Solution />
+<Solution>
+  <Project Path="AvaloniaUI.Services/AvaloniaUI.Services.csproj" />
+</Solution>
