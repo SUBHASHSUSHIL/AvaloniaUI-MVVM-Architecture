@@ -24,4 +24,9 @@
     </PackageReference>
     <PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.1" />
   </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AvaloniaUI.Core\AvaloniaUI.Core.csproj" />
+    <ProjectReference Include="..\AvaloniaUI.Services\AvaloniaUI.Services.csproj" />
+  </ItemGroup>
 </Project>
