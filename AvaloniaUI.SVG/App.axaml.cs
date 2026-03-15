@@ -5,6 +5,7 @@ using Avalonia.Data.Core.Plugins;
 using Avalonia.Markup.Xaml;
 using AvaloniaUI.SVG.ViewModels;
 using AvaloniaUI.SVG.Views;
+using System;
 using System.Linq;
 
 namespace AvaloniaUI.SVG
@@ -29,6 +30,7 @@ namespace AvaloniaUI.SVG
                 };
             }
 
+            GC.KeepAlive(typeof(Avalonia.Svg.Skia.SvgImage));
             base.OnFrameworkInitializationCompleted();
         }
 
