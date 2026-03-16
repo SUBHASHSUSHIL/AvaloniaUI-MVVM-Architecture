@@ -31,6 +31,7 @@ namespace AvaloniaUI.SVG
             }
 
             GC.KeepAlive(typeof(Avalonia.Svg.Skia.SvgImage));
+
             base.OnFrameworkInitializationCompleted();
         }
 

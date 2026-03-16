@@ -5,7 +5,7 @@
     <Project Path="AvaloniaUI.Services/AvaloniaUI.Services.csproj" />
   </Folder>
   <Folder Name="/src/samples/">
-    <Project Path="AvaloniaUI.SVG/AvaloniaUI.SVG.csproj" Id="29af7fb8-44bb-4a01-8811-3861564f3131" />
+    <Project Path="AvaloniaUI.SVG/AvaloniaUI.SVG.csproj" Id="c8b04a97-e879-48e9-a43b-27dcfe85d924" />
   </Folder>
   <Folder Name="/test/">
     <Project Path="AvaloniaUI.Test/AvaloniaUI.Test.csproj" />

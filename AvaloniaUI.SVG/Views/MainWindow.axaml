@@ -1,22 +1,48 @@
 <Window xmlns="https://github.com/avaloniaui"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:vm="using:AvaloniaUI.SVG.ViewModels"
-        xmlns:svg="clr-namespace:Avalonia.Svg.Skia;assembly=Svg.Controls.Skia.Avalonia"
-        x:Class="AvaloniaUI.SVG.Views.MainWindow"
-        x:DataType="vm:MainWindowViewModel"
-        Title="AvaloniaUI.SVG">
+		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+		xmlns:vm="using:AvaloniaUI.SVG.ViewModels"
+		xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+		xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+		xmlns:svg="clr-namespace:Avalonia.Svg.Skia;assembly=Svg.Controls.Skia.Avalonia"
+		mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+		x:Class="AvaloniaUI.SVG.Views.MainWindow"
+		x:DataType="vm:MainWindowViewModel"
+		Icon="/Assets/avalonia-logo.ico"
+		Title="AvaloniaUI.SVG">
 
-    <StackPanel>
-        <Grid>
+	<Design.DataContext>
+		<!-- This only sets the DataContext for the previewer in an IDE,
+		to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
+		<vm:MainWindowViewModel/>
+	</Design.DataContext>
 
-            <TextBlock Text="{Binding Greeting}"
-                       HorizontalAlignment="Center"/>
+	<StackPanel>
+		<TextBlock Text="{Binding Greeting}" HorizontalAlignment="Center"/>
 
-            <svg:Svg Width="120"
-                     Height="120"
-                     Path="avares://AvaloniaUI.SVG/Assets/CPU.svg"/>
+		<!--static resource-->
+		<Image Width="64" Height="64">
+			<Image.Source>
+				<svg:SvgImage Source="/Assets/CPU.svg"/>
+			</Image.Source>
+		</Image>
 
-        </Grid>
-    </StackPanel>
+		<!--dynamic resource-->
+		<!-- As an Image source -->
+		<Grid VerticalAlignment="Bottom">
+			<Image Source="{DynamicResource CameraIcon}"
+			   Width="82" Height="92"/>
+
+		<!-- Inside a Button -->
+		<Button>
+			<Image Source="{DynamicResource SettingsIcon}"
+				   Width="800" Height="90"/>
+		</Button>
+		</Grid>
+		
+	</StackPanel>
+
+
+
+
 
 </Window>
