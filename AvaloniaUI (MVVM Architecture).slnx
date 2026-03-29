@@ -9,7 +9,4 @@
     <Project Path="AvaloniaUI.SVG/AvaloniaUI.SVG.csproj" Id="c8b04a97-e879-48e9-a43b-27dcfe85d924" />
     <Project Path="AvaloniaUI.Topbar/AvaloniaUI.Topbar.csproj" Id="72a445bd-2b60-4824-aa3b-becab6c74ec6" />
   </Folder>
-  <Folder Name="/test/">
-    <Project Path="AvaloniaUI.Test/AvaloniaUI.Test.csproj" />
-  </Folder>
 </Solution>
